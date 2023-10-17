@@ -40,18 +40,23 @@ img {
 
 /*----------------------------Variables----------------------------*/
 :root {
-  --color-text: ;
+  --color-text: #f5fbf2;
 }
 
 /*----------------------------Other----------------------------*/
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   color: var(--color-text);
-  background-color: #ffffff;
+  background-color: #1c121f;
 }
 
+.container-main {
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
 .container {
-  max-width: 1158px;
+  max-width: 1470px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -96,7 +101,79 @@ body {
 }
 
 /*----------------------------Header----------------------------*/
-
+.header {
+}
+.header-bg-filter {
+  position: absolute;
+  width: 770px;
+  height: 1063px;
+  background-color: rgba(79, 70, 78, 0.45);
+  backdrop-filter: blur(15px);
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+.header-filter-1 {
+  width: 445.002px;
+  height: 227.087px;
+  transform: rotate(-139.059deg);
+  background-color: rgba(231, 178, 38, 0.83);
+  filter: blur(225px);
+  position: absolute;
+  top: 539px;
+  left: 1173px;
+}
+.header-filter-2 {
+  width: 445.002px;
+  height: 227.087px;
+  transform: rotate(-139.059deg);
+  background-color: #d53d5c;
+  filter: blur(225px);
+  position: absolute;
+  top: 188px;
+  left: 1217px;
+}
+.header-filter-3 {
+  width: 445.868px;
+  height: 247.576px;
+  transform: rotate(-139.059deg);
+  background-color: rgba(96, 231, 206, 0.67);
+  filter: blur(225px);
+  position: absolute;
+  top: 617px;
+  left: 893px;
+}
+.header-filter-4 {
+  width: 402px;
+  height: 208px;
+  transform: rotate(-5.058deg);
+  background-color: rgba(231, 178, 38, 0.8);
+  filter: blur(225px);
+  position: absolute;
+  top: 675px;
+  right: 1494px;
+}
+.header-filter-5 {
+  width: 312px;
+  height: 312px;
+  transform: rotate(-5.058deg);
+  border-radius: 312px;
+  background-color: #bb00ab;
+  filter: blur(175px);
+  position: absolute;
+  top: 663px;
+  left: 894px;
+}
+.header-filter-6 {
+  width: 334px;
+  height: 188px;
+  transform: rotate(-5.058deg);
+  background-color: rgba(96, 231, 206, 0.5);
+  filter: blur(225px);
+  position: absolute;
+  top: -150px;
+  left: 1281px;
+}
 /*---------------------------- Section 1 ----------------------------*/
 
 /*---------------------------- Footer ----------------------------*/
