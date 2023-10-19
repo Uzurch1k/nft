@@ -48,6 +48,7 @@ body {
   font-family: 'Work Sans', sans-serif;
   color: var(--color-text);
   background-color: #1c121f;
+  overflow-x: hidden;
 }
 
 .container-main {
@@ -121,7 +122,7 @@ body {
   filter: blur(225px);
   position: absolute;
   top: 539px;
-  left: 1173px;
+  left: 1203px;
 }
 .header-filter-2 {
   width: 445.002px;
@@ -131,7 +132,7 @@ body {
   filter: blur(225px);
   position: absolute;
   top: 188px;
-  left: 1217px;
+  left: 1247px;
 }
 .header-filter-3 {
   width: 445.868px;
@@ -141,7 +142,7 @@ body {
   filter: blur(225px);
   position: absolute;
   top: 617px;
-  left: 893px;
+  left: 923px;
 }
 .header-filter-4 {
   width: 402px;
@@ -151,7 +152,7 @@ body {
   filter: blur(225px);
   position: absolute;
   top: 675px;
-  right: 1494px;
+  right: 1534px;
 }
 .header-filter-5 {
   width: 312px;
@@ -162,7 +163,7 @@ body {
   filter: blur(175px);
   position: absolute;
   top: 663px;
-  left: 894px;
+  left: 924px;
 }
 .header-filter-6 {
   width: 334px;
@@ -172,7 +173,7 @@ body {
   filter: blur(225px);
   position: absolute;
   top: -150px;
-  left: 1281px;
+  left: 1311px;
 }
 /*---------------------------- Section 1 ----------------------------*/
 
