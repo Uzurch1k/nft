@@ -262,7 +262,6 @@ body {
   overflow: hidden;
 }
 .hero-info-conteiner {
-  transform: translateY(-1000%);
   opacity: 0.95;
   background: linear-gradient(
     93deg,
@@ -276,9 +275,6 @@ body {
   justify-content: space-between;
   align-items: center;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero-img-wrap:hover > .hero-info-wrap .hero-info-conteiner {
-  transform: translateY(0);
 }
 .hero-info {
 }
