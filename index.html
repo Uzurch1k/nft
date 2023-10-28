@@ -124,7 +124,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="brand-svg" width="149" height="149">
+                <svg class="brand-svg" width="149" height="33">
                   <use href="./image/svg/icons.svg#icon-company-1"></use>
                 </svg>
               </a>
@@ -136,7 +136,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="brand-svg" width="309" height="309">
+                <svg class="brand-svg" width="309" height="24">
                   <use href="./image/svg/icons.svg#icon-company-2"></use>
                 </svg>
               </a>
@@ -148,7 +148,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="brand-svg" width="204" height="204">
+                <svg class="brand-svg" width="204" height="41">
                   <use href="./image/svg/icons.svg#icon-company-3"></use>
                 </svg>
               </a>
@@ -160,7 +160,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="brand-svg" width="177.662" height="177.662">
+                <svg class="brand-svg" width="177.662" height="28.377">
                   <use href="./image/svg/icons.svg#icon-company-4"></use>
                 </svg>
               </a>
@@ -172,19 +172,19 @@
       <section class="auctions">
         <div class="container">
           <h2 class="auctions-title">Live Auctions</h2>
-          <div class="auctions-scroll">
-            <button type="button" class="auctions-first">
-              <svg width="54" height="54" class="auctions-first-svg">
-                <use href="./image/svg/icons.svg#icon-vector1"></use>
-              </svg>
-            </button>
-            <button type="button" class="auctions-last">
-              <svg width="54" height="54" class="auctions-last-svg">
-                <use href="./image/svg/icons.svg#icon-vector2"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="auctions-wrap">
+          <div id="carousel" class="auctions-carousel">
+            <div class="auctions-scroll">
+              <button type="button" class="auctions-scroll-btn first">
+                <svg width="54" height="54" class="auctions-svg">
+                  <use href="./image/svg/icons.svg#icon-vector1"></use>
+                </svg>
+              </button>
+              <button type="button" class="auctions-scroll-btn last">
+                <svg width="54" height="54" class="auctions-svg">
+                  <use href="./image/svg/icons.svg#icon-vector2"></use>
+                </svg>
+              </button>
+            </div>
             <ul class="auctions-list">
               <li class="auctions-item">
                 <div class="auctions-item-wrap">
@@ -202,7 +202,7 @@
                   </div>
                   <div class="auctions-info">
                     <img
-                      src="./image/ava/ava-1.png"
+                      src="./image/ava/ava-3.png"
                       alt=""
                       width="54"
                       height="54"
@@ -216,11 +216,11 @@
                       <input
                         type="checkbox"
                         name="auctions-chb"
-                        id="auctions-chb"
-                        class="auctions-chb-input"
+                        id="auctions-chb-one"
+                        class="auctions-chb-input visually-hidden"
                       />
-                      <label for="auctions-chb" class="auctions-label">
-                        <span>
+                      <label for="auctions-chb-one" class="auctions-label">
+                        <span class="auctions-chb-like">
                           <svg
                             width="28"
                             height="25.69"
@@ -229,7 +229,119 @@
                             <use href="./image/svg/icons.svg#icon-like"></use>
                           </svg>
                         </span>
-                        92
+                        <span class="auctions-chb-text">92</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="auctions-price">
+                    <p class="auctions-price-subtitle">Current Bid</p>
+                    <p class="auctions-price-sum">4.89 ETH</p>
+                  </div>
+                  <button type="button" class="auctions-btn">
+                    Place a bid
+                  </button>
+                </div>
+              </li>
+              <li class="auctions-item">
+                <div class="auctions-item-wrap">
+                  <div class="auctions-content">
+                    <img
+                      src="./image/auctions/auctions-2.jpg"
+                      alt=""
+                      width="431"
+                      height="359"
+                      class="auctions-img"
+                    />
+                    <div class="auctions-time-wrap">
+                      <p class="auctions-time">03:18:24</p>
+                    </div>
+                  </div>
+                  <div class="auctions-info">
+                    <img
+                      src="./image/ava/ava-3.png"
+                      alt=""
+                      width="54"
+                      height="54"
+                      class="auctions-ava"
+                    />
+                    <div class="auctions-data">
+                      <p class="auctions-name">Virtual Art</p>
+                      <p class="auctions-username">by @wzard</p>
+                    </div>
+                    <div class="auctions-chb-wrap">
+                      <input
+                        type="checkbox"
+                        name="auctions-chb"
+                        id="auctions-chb-two"
+                        class="auctions-chb-input visually-hidden"
+                      />
+                      <label for="auctions-chb-two" class="auctions-label">
+                        <span class="auctions-chb-like">
+                          <svg
+                            width="28"
+                            height="25.69"
+                            class="auctions-chb-svg"
+                          >
+                            <use href="./image/svg/icons.svg#icon-like"></use>
+                          </svg>
+                        </span>
+                        <span class="auctions-chb-text">92</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="auctions-price">
+                    <p class="auctions-price-subtitle">Current Bid</p>
+                    <p class="auctions-price-sum">4.89 ETH</p>
+                  </div>
+                  <button type="button" class="auctions-btn">
+                    Place a bid
+                  </button>
+                </div>
+              </li>
+              <li class="auctions-item">
+                <div class="auctions-item-wrap">
+                  <div class="auctions-content">
+                    <img
+                      src="./image/auctions/auctions-3.jpg"
+                      alt=""
+                      width="431"
+                      height="359"
+                      class="auctions-img"
+                    />
+                    <div class="auctions-time-wrap">
+                      <p class="auctions-time">03:18:24</p>
+                    </div>
+                  </div>
+                  <div class="auctions-info">
+                    <img
+                      src="./image/ava/ava-3.png"
+                      alt=""
+                      width="54"
+                      height="54"
+                      class="auctions-ava"
+                    />
+                    <div class="auctions-data">
+                      <p class="auctions-name">Virtual Art</p>
+                      <p class="auctions-username">by @wzard</p>
+                    </div>
+                    <div class="auctions-chb-wrap">
+                      <input
+                        type="checkbox"
+                        name="auctions-chb"
+                        id="auctions-chb-tree"
+                        class="auctions-chb-input visually-hidden"
+                      />
+                      <label for="auctions-chb-tree" class="auctions-label">
+                        <span class="auctions-chb-like">
+                          <svg
+                            width="28"
+                            height="25.69"
+                            class="auctions-chb-svg"
+                          >
+                            <use href="./image/svg/icons.svg#icon-like"></use>
+                          </svg>
+                        </span>
+                        <span class="auctions-chb-text">92</span>
                       </label>
                     </div>
                   </div>
@@ -248,6 +360,8 @@
                     <img
                       src="./image/auctions/auctions-1.jpg"
                       alt=""
+                      width="431"
+                      height="359"
                       class="auctions-img"
                     />
                     <div class="auctions-time-wrap">
@@ -256,8 +370,10 @@
                   </div>
                   <div class="auctions-info">
                     <img
-                      src="./image/ava/ava-1.png"
+                      src="./image/ava/ava-3.png"
                       alt=""
+                      width="54"
+                      height="54"
                       class="auctions-ava"
                     />
                     <div class="auctions-data">
@@ -268,11 +384,11 @@
                       <input
                         type="checkbox"
                         name="auctions-chb"
-                        id="auctions-chb"
-                        class="auctions-chb-input"
+                        id="auctions-chb-four"
+                        class="auctions-chb-input visually-hidden"
                       />
-                      <label for="auctions-chb" class="auctions-label">
-                        <span>
+                      <label for="auctions-chb-four" class="auctions-label">
+                        <span class="auctions-chb-like">
                           <svg
                             width="28"
                             height="25.69"
@@ -281,7 +397,343 @@
                             <use href="./image/svg/icons.svg#icon-like"></use>
                           </svg>
                         </span>
-                        92
+                        <span class="auctions-chb-text">92</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="auctions-price">
+                    <p class="auctions-price-subtitle">Current Bid</p>
+                    <p class="auctions-price-sum">4.89 ETH</p>
+                  </div>
+                  <button type="button" class="auctions-btn">
+                    Place a bid
+                  </button>
+                </div>
+              </li>
+              <li class="auctions-item">
+                <div class="auctions-item-wrap">
+                  <div class="auctions-content">
+                    <img
+                      src="./image/auctions/auctions-2.jpg"
+                      alt=""
+                      width="431"
+                      height="359"
+                      class="auctions-img"
+                    />
+                    <div class="auctions-time-wrap">
+                      <p class="auctions-time">03:18:24</p>
+                    </div>
+                  </div>
+                  <div class="auctions-info">
+                    <img
+                      src="./image/ava/ava-3.png"
+                      alt=""
+                      width="54"
+                      height="54"
+                      class="auctions-ava"
+                    />
+                    <div class="auctions-data">
+                      <p class="auctions-name">Virtual Art</p>
+                      <p class="auctions-username">by @wzard</p>
+                    </div>
+                    <div class="auctions-chb-wrap">
+                      <input
+                        type="checkbox"
+                        name="auctions-chb"
+                        id="auctions-chb-five"
+                        class="auctions-chb-input visually-hidden"
+                      />
+                      <label for="auctions-chb-five" class="auctions-label">
+                        <span class="auctions-chb-like">
+                          <svg
+                            width="28"
+                            height="25.69"
+                            class="auctions-chb-svg"
+                          >
+                            <use href="./image/svg/icons.svg#icon-like"></use>
+                          </svg>
+                        </span>
+                        <span class="auctions-chb-text">92</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="auctions-price">
+                    <p class="auctions-price-subtitle">Current Bid</p>
+                    <p class="auctions-price-sum">4.89 ETH</p>
+                  </div>
+                  <button type="button" class="auctions-btn">
+                    Place a bid
+                  </button>
+                </div>
+              </li>
+              <li class="auctions-item">
+                <div class="auctions-item-wrap">
+                  <div class="auctions-content">
+                    <img
+                      src="./image/auctions/auctions-3.jpg"
+                      alt=""
+                      width="431"
+                      height="359"
+                      class="auctions-img"
+                    />
+                    <div class="auctions-time-wrap">
+                      <p class="auctions-time">03:18:24</p>
+                    </div>
+                  </div>
+                  <div class="auctions-info">
+                    <img
+                      src="./image/ava/ava-3.png"
+                      alt=""
+                      width="54"
+                      height="54"
+                      class="auctions-ava"
+                    />
+                    <div class="auctions-data">
+                      <p class="auctions-name">Virtual Art</p>
+                      <p class="auctions-username">by @wzard</p>
+                    </div>
+                    <div class="auctions-chb-wrap">
+                      <input
+                        type="checkbox"
+                        name="auctions-chb"
+                        id="auctions-chb-six"
+                        class="auctions-chb-input visually-hidden"
+                      />
+                      <label for="auctions-chb-six" class="auctions-label">
+                        <span class="auctions-chb-like">
+                          <svg
+                            width="28"
+                            height="25.69"
+                            class="auctions-chb-svg"
+                          >
+                            <use href="./image/svg/icons.svg#icon-like"></use>
+                          </svg>
+                        </span>
+                        <span class="auctions-chb-text">92</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="auctions-price">
+                    <p class="auctions-price-subtitle">Current Bid</p>
+                    <p class="auctions-price-sum">4.89 ETH</p>
+                  </div>
+                  <button type="button" class="auctions-btn">
+                    Place a bid
+                  </button>
+                </div>
+              </li>
+              <li class="auctions-item">
+                <div class="auctions-item-wrap">
+                  <div class="auctions-content">
+                    <img
+                      src="./image/auctions/auctions-1.jpg"
+                      alt=""
+                      width="431"
+                      height="359"
+                      class="auctions-img"
+                    />
+                    <div class="auctions-time-wrap">
+                      <p class="auctions-time">03:18:24</p>
+                    </div>
+                  </div>
+                  <div class="auctions-info">
+                    <img
+                      src="./image/ava/ava-3.png"
+                      alt=""
+                      width="54"
+                      height="54"
+                      class="auctions-ava"
+                    />
+                    <div class="auctions-data">
+                      <p class="auctions-name">Virtual Art</p>
+                      <p class="auctions-username">by @wzard</p>
+                    </div>
+                    <div class="auctions-chb-wrap">
+                      <input
+                        type="checkbox"
+                        name="auctions-chb"
+                        id="auctions-chb-seven"
+                        class="auctions-chb-input visually-hidden"
+                      />
+                      <label for="auctions-chb-seven" class="auctions-label">
+                        <span class="auctions-chb-like">
+                          <svg
+                            width="28"
+                            height="25.69"
+                            class="auctions-chb-svg"
+                          >
+                            <use href="./image/svg/icons.svg#icon-like"></use>
+                          </svg>
+                        </span>
+                        <span class="auctions-chb-text">92</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="auctions-price">
+                    <p class="auctions-price-subtitle">Current Bid</p>
+                    <p class="auctions-price-sum">4.89 ETH</p>
+                  </div>
+                  <button type="button" class="auctions-btn">
+                    Place a bid
+                  </button>
+                </div>
+              </li>
+              <li class="auctions-item">
+                <div class="auctions-item-wrap">
+                  <div class="auctions-content">
+                    <img
+                      src="./image/auctions/auctions-2.jpg"
+                      alt=""
+                      width="431"
+                      height="359"
+                      class="auctions-img"
+                    />
+                    <div class="auctions-time-wrap">
+                      <p class="auctions-time">03:18:24</p>
+                    </div>
+                  </div>
+                  <div class="auctions-info">
+                    <img
+                      src="./image/ava/ava-3.png"
+                      alt=""
+                      width="54"
+                      height="54"
+                      class="auctions-ava"
+                    />
+                    <div class="auctions-data">
+                      <p class="auctions-name">Virtual Art</p>
+                      <p class="auctions-username">by @wzard</p>
+                    </div>
+                    <div class="auctions-chb-wrap">
+                      <input
+                        type="checkbox"
+                        name="auctions-chb"
+                        id="auctions-chb-eight"
+                        class="auctions-chb-input visually-hidden"
+                      />
+                      <label for="auctions-chb-eight" class="auctions-label">
+                        <span class="auctions-chb-like">
+                          <svg
+                            width="28"
+                            height="25.69"
+                            class="auctions-chb-svg"
+                          >
+                            <use href="./image/svg/icons.svg#icon-like"></use>
+                          </svg>
+                        </span>
+                        <span class="auctions-chb-text">92</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="auctions-price">
+                    <p class="auctions-price-subtitle">Current Bid</p>
+                    <p class="auctions-price-sum">4.89 ETH</p>
+                  </div>
+                  <button type="button" class="auctions-btn">
+                    Place a bid
+                  </button>
+                </div>
+              </li>
+              <li class="auctions-item">
+                <div class="auctions-item-wrap">
+                  <div class="auctions-content">
+                    <img
+                      src="./image/auctions/auctions-3.jpg"
+                      alt=""
+                      width="431"
+                      height="359"
+                      class="auctions-img"
+                    />
+                    <div class="auctions-time-wrap">
+                      <p class="auctions-time">03:18:24</p>
+                    </div>
+                  </div>
+                  <div class="auctions-info">
+                    <img
+                      src="./image/ava/ava-3.png"
+                      alt=""
+                      width="54"
+                      height="54"
+                      class="auctions-ava"
+                    />
+                    <div class="auctions-data">
+                      <p class="auctions-name">Virtual Art</p>
+                      <p class="auctions-username">by @wzard</p>
+                    </div>
+                    <div class="auctions-chb-wrap">
+                      <input
+                        type="checkbox"
+                        name="auctions-chb"
+                        id="auctions-chb-nine"
+                        class="auctions-chb-input visually-hidden"
+                      />
+                      <label for="auctions-chb-nine" class="auctions-label">
+                        <span class="auctions-chb-like">
+                          <svg
+                            width="28"
+                            height="25.69"
+                            class="auctions-chb-svg"
+                          >
+                            <use href="./image/svg/icons.svg#icon-like"></use>
+                          </svg>
+                        </span>
+                        <span class="auctions-chb-text">92</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="auctions-price">
+                    <p class="auctions-price-subtitle">Current Bid</p>
+                    <p class="auctions-price-sum">4.89 ETH</p>
+                  </div>
+                  <button type="button" class="auctions-btn">
+                    Place a bid
+                  </button>
+                </div>
+              </li>
+              <li class="auctions-item">
+                <div class="auctions-item-wrap">
+                  <div class="auctions-content">
+                    <img
+                      src="./image/auctions/auctions-1.jpg"
+                      alt=""
+                      width="431"
+                      height="359"
+                      class="auctions-img"
+                    />
+                    <div class="auctions-time-wrap">
+                      <p class="auctions-time">03:18:24</p>
+                    </div>
+                  </div>
+                  <div class="auctions-info">
+                    <img
+                      src="./image/ava/ava-3.png"
+                      alt=""
+                      width="54"
+                      height="54"
+                      class="auctions-ava"
+                    />
+                    <div class="auctions-data">
+                      <p class="auctions-name">Virtual Art</p>
+                      <p class="auctions-username">by @wzard</p>
+                    </div>
+                    <div class="auctions-chb-wrap">
+                      <input
+                        type="checkbox"
+                        name="auctions-chb"
+                        id="auctions-chb-ten"
+                        class="auctions-chb-input visually-hidden"
+                      />
+                      <label for="auctions-chb-ten" class="auctions-label">
+                        <span class="auctions-chb-like">
+                          <svg
+                            width="28"
+                            height="25.69"
+                            class="auctions-chb-svg"
+                          >
+                            <use href="./image/svg/icons.svg#icon-like"></use>
+                          </svg>
+                        </span>
+                        <span class="auctions-chb-text">92</span>
                       </label>
                     </div>
                   </div>
@@ -301,5 +753,6 @@
     </main>
 
     <footer class="footer"></footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

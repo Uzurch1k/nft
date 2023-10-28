@@ -274,7 +274,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-info {
 }
@@ -341,7 +340,7 @@ body {
 .header-bg-filter {
   position: absolute;
   width: 48%;
-  height: 1063px;
+  height: 100%;
   background-color: rgba(79, 70, 78, 0.45);
   backdrop-filter: blur(15px);
   top: 0;
@@ -411,7 +410,7 @@ body {
 }
 /*---------------------------- Section 1 ----------------------------*/
 .brand {
-  padding: 60px 0;
+  padding: 194px 0;
 }
 .container {
 }
@@ -440,57 +439,185 @@ body {
 .container {
 }
 .auctions-title {
+  margin: 0 auto;
+  font-family: Oxanium;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 2.03;
+  position: relative;
+  display: block;
+  width: 410px;
+}
+.auctions-title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%);
+  width: 110px;
+  height: 110px;
+  background-color: #8613a5;
+  border-radius: 50%;
+  z-index: -1;
+}
+.auctions-carousel {
+  width: 1440px;
+  overflow: hidden;
 }
 .auctions-scroll {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 42px;
+  justify-content: end;
 }
-.auctions-first {
+.auctions-scroll-btn {
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
 }
-.auctions-first-svg {
+.auctions-svg {
+  fill: #f5fbf2;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.auctions-last {
+.auctions-svg:hover {
+  opacity: 0.25;
 }
-.auctions-last-svg {
+.first {
 }
-.auctions-wrap {
+.last {
 }
 .auctions-list {
+  display: flex;
+  gap: 42px;
+  width: 9999px;
+  transition: margin-left 450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .auctions-item {
+  background-color: #3d2942;
+  padding: 32px 32px 28px 32px;
 }
 .auctions-item-wrap {
+  background-color: inherit;
 }
 .auctions-content {
+  position: relative;
+  width: 431px;
+  height: 359px;
+  overflow: hidden;
 }
 .auctions-img {
 }
 .auctions-time-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 194px;
+  height: 66px;
+  opacity: 0.95;
+  background: linear-gradient(
+    125deg,
+    #8613a5 18.61%,
+    rgba(250, 250, 250, 0.65) 137.4%
+  );
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(22.5px);
 }
 .auctions-time {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.47;
+  letter-spacing: 0.02em;
 }
 .auctions-info {
+  margin-top: 28px;
+  display: flex;
 }
 .auctions-ava {
+  align-self: flex-start;
+  margin-right: 16px;
 }
 .auctions-data {
+  margin-bottom: 28px;
 }
 .auctions-name {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.26;
 }
 .auctions-username {
+  color: #bdaac1;
+  font-size: 20px;
+  line-height: 1.77;
 }
 .auctions-chb-wrap {
+  margin-left: auto;
+  margin-top: 18px;
 }
 .auctions-chb-input {
 }
 .auctions-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.auctions-chb-like {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 9px;
 }
 .auctions-chb-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #76607a;
+}
+.auctions-chb-input:checked
+  + .auctions-label
+  .auctions-chb-like
+  .auctions-chb-svg {
+  fill: #8613a5;
+}
+.auctions-chb-text {
+  color: #76607a;
+  font-size: 32px;
+  line-height: 1.1;
 }
 .auctions-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 .auctions-price-subtitle {
+  color: #c6bfc8;
+  font-size: 24px;
+  line-height: 1.47;
 }
 .auctions-price-sum {
+  font-family: Oxanium;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.47;
 }
 .auctions-btn {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.47;
+  letter-spacing: 1.2px;
+  width: 100%;
+  height: 78px;
+  border: 1px solid #fde8b3;
+  background-color: rgba(233, 215, 167, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.auctions-btn:hover {
+  background-color: rgb(148, 129, 73);
 }
 /*---------------------------- Footer ----------------------------*/
