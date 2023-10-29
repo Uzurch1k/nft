@@ -685,26 +685,9 @@ body {
 .works-item:nth-child(3) {
   margin-right: 244px;
 }
-.works-item:nth-child(1)::after,
-.works-item:nth-child(2)::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -150px;
-  background-color: #fff;
-  width: 100px;
-  height: 100px;
-}
-.works-item:nth-child(3)::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -150px;
-  background-color: #fff;
-  width: 100px;
-  height: 100px;
-}
 .works-link {
+  position: relative;
+  z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -722,7 +705,94 @@ body {
   fill: transparent;
   stroke: #908294;
 }
-
+.works-arrow {
+}
+.works-item:nth-child(1) .works-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  animation-name: circle1;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes circle1 {
+  0% {
+    right: 40px;
+    width: 50px;
+  }
+  25% {
+    width: 120px;
+  }
+  50% {
+    width: 166px;
+  }
+  75% {
+    width: 120px;
+  }
+  100% {
+    width: 50px;
+    right: -380px;
+  }
+}
+.works-item:nth-child(2) .works-arrow {
+  position: absolute;
+  top: 50%;
+  right: -223px;
+  transform: translateY(-50%);
+  animation-name: circle2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes circle2 {
+  0% {
+    right: 40px;
+    width: 50px;
+  }
+  25% {
+    width: 120px;
+  }
+  50% {
+    width: 166px;
+  }
+  75% {
+    width: 120px;
+  }
+  100% {
+    width: 50px;
+    right: -350px;
+  }
+}
+.works-item:nth-child(3) .works-arrow {
+  position: absolute;
+  top: 50%;
+  right: -195px;
+  transform: translateY(-50%);
+  animation-name: circle3;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes circle3 {
+  0% {
+    right: 40px;
+    width: 50px;
+  }
+  25% {
+    width: 120px;
+  }
+  50% {
+    width: 166px;
+  }
+  75% {
+    width: 120px;
+  }
+  100% {
+    width: 50px;
+    right: -350px;
+  }
+}
 .works-text-list {
   display: flex;
   justify-content: center;
